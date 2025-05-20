@@ -11,10 +11,10 @@ if not os.path.exists(CONTACT_CSV):
     pd.DataFrame(columns=['Name', 'Email', 'Message']).to_csv(CONTACT_CSV, index=False)
 
 # Load data from JSON files
-with open('D:/Aimzer/Portfolio-flask-master/data/person_info.json', 'r') as f:
+with open('data/person_info.json', 'r') as f:
     person_info = json.load(f)
 
-with open('D:/Aimzer/Portfolio-flask-master/data/projects.json', 'r') as f:
+with open('data/projects.json', 'r') as f:
     projects_data = json.load(f)
 
 @app.route('/')
